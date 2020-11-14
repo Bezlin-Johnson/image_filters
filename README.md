@@ -4,7 +4,8 @@ description: "Lets add filters to images using css."
 author: "@bezlin6mechminerz"
 ---
 
-Having a user interface is very useful because it gives both a good interactive experience for the user and makes it much more visually appealing. So let's see how to make a simple user interface with Python. In this workshop, we will be using Python to make a slideshow of quotes.
+All of us try out filters when we take a selfie. Ever wondered how those work? That's what we are going to do today.We will use CSS for 
+adding different kinds of filter to an image.
 
 The workshop will look something like this.
 
