@@ -1,6 +1,6 @@
 ---
-name: "To Quote or Not To Quote?"
-description: "Let's build a slideshow of quotes with Tkinter and Python!"
+name: "Image Filters"
+description: "Lets add filters to images using css."
 author: "@bezlin6mechminerz"
 ---
 
