@@ -6,13 +6,22 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <input type="checkbox"id="togglebtn1">
-  <label for="togglebtn1"id="filter1">B&W</label>
-  <input type="checkbox"id="togglebtn2">
-  <label for="togglebtn2"id="filter2">contrast</label>
-  <input type="checkbox"id="togglebtn3">
-  <label for="togglebtn3"id="filter3">Bria</label>
+  <input type="checkbox" id="togglebtn1" />
+  <label for="togglebtn1" id="filter1">B&W</label>
+  <input type="checkbox" id="togglebtn2" />
+  <label for="togglebtn2" id="filter2">contrast</label>
+  <input type="checkbox" id="togglebtn3" />
+  <label for="togglebtn3" id="filter3">Bria</label>
   <div class="title"><h1>Image Filter</h1></div>
-  <input id="imageURL" placeholder="Image URL" onkeypress="imageSubmit(event)">
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tNQcCZ1dW36Ee1xzTJ17AwHaEK%26pid%3DApi&f=1" alt="Image Not Found">
+  <input
+    id="imageURL"
+    placeholder="Image URL"
+    onkeypress="imageSubmit(event)"
+  />
+  <div id="imgView">
+    <img
+      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tNQcCZ1dW36Ee1xzTJ17AwHaEK%26pid%3DApi&f=1"
+      alt="Image Not Found"
+    />
+  </div>
 </body>
