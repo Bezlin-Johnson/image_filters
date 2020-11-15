@@ -4,12 +4,12 @@ description: "Lets add filters to images using css."
 author: "@bezlin6mechminerz"
 ---
 
-All of us try out filters when we take a selfie. Ever wondered how those work? That's what we are going to do today.We will use CSS for 
+All of us try out filters when we take a selfie. Ever wondered how those work? That's what we are going to do today.We will use CSS for
 adding different kinds of filter to an image.
 
 The workshop will look something like this.
 
-![Output video](https://cloud-rbupe5aas.vercel.app/0ezgif.com-video-to-gif-2.gif)
+![Output video](https://cloud-62ium4cvk.vercel.app/0ezgif.com-gif-maker.gif)
 
 View a [live demo](https://repl.it/@bezlin/trialtkinterpy-2#main.py)
 
@@ -198,7 +198,7 @@ window.mainloop()
 
 ```
 
-![run it](https://cloud-1bls40wim.vercel.app/0ezgif.com-video-to-gif.gif)
+![run it](https://cloud-rd9uv1ixb.vercel.app/0ezgif.com-gif-maker__1_.gif)
 
 ## Hacking time!
 
