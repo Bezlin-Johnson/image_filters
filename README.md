@@ -25,10 +25,6 @@ We will be using [Repl.it.](https://repl.it) It is awesome because you can code 
 After that create a new repl and select language HTML, CSS, JS.
 
 ![repl](https://cloud-ns067nqq8.vercel.app/0screenshot_2020-10-23_at_12.10.50_am.png)
-## Code and explanation
-
-
-![run it](https://cloud-rd9uv1ixb.vercel.app/0ezgif.com-gif-maker__1_.gif)
 
 ## Let's Code!
 
@@ -42,6 +38,8 @@ After that create a new repl and select language HTML, CSS, JS.
 <head>
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
@@ -56,12 +54,16 @@ After that create a new repl and select language HTML, CSS, JS.
 
 We add this to make the webpage responsive.
 
+Now we'll make a input button which will switch on/off
+the filter that we make and add a label to it.
+
 ```html
 <input type="checkbox" id="togglebtn1" />
 <label for="togglebtn1" id="filter1">B&W</label>
 ```
+We made the input of type checkbox and made a label for it.A label is basically a connection to the what it was made for, that is, here, for input.This will act like a toggle for a filter.
 
-//
+Let's just make two more toggles.
 ```html
 <input type="checkbox" id="togglebtn1" />
 <label for="togglebtn1" id="filter1">B&W</label>
@@ -70,12 +72,12 @@ We add this to make the webpage responsive.
 <input type="checkbox" id="togglebtn3" />
 <label for="togglebtn3" id="filter3">Bria</label>
 ```
-//
+Lets just give a title using a heading tag.
 
 ```html
   <div class="title"><h1>Image Filter</h1></div>
 ```
-//
+Now we create an input field which will accept a URL to an image.We add a placeholder saying "Image URL" to just help the users out. Also we add an event on key press. When a key is pressed, we will call the function imageSubmit().We will define that later. 
 
 ```html
  <input
@@ -84,7 +86,7 @@ We add this to make the webpage responsive.
     onkeypress="imageSubmit(event)"
   />
 ```
-//
+We use a img tag to display the image that user will be giving.We also have a default one so we can just test the filter out.
 
 ```html
 <div id="imgView">
@@ -96,8 +98,7 @@ We add this to make the webpage responsive.
   </div>
 
 ```
-//
-
+That's it.
 Now, the html file will look like this
 
 ```html
@@ -129,8 +130,6 @@ Now, the html file will look like this
     />
   </div>
 </body>
-
-
 ```
 
 ### Time for some JavsScript
@@ -138,17 +137,15 @@ Now, the html file will look like this
 ```javascript
 function imageSubmit(event ){
     if(event.keyCode==13){
-        console.log("New Image");
         var imgUrl=document.getElementById("imageURL").value;
         document.getElementById("imageURL").value="";
-        console.log(imgUrl);
         document.getElementById("imgprev").src=imgUrl;
     }
 }   
-
-
 ```
-//
+Remember calling a function earlier inside the input tag. We will be defining it in the js file.The key press event is passed to the function.We check if the keycode of the event, in simpler terms, which key was pressed was the enter key(ketCode- 13).This means the user gave an url and has submitted it. We get the url from the input tag and assign it to the variable imgURL.We, then go and clear the input field.And, finally we go and change the src attribute of the img tag to the new url provided by the user.
+Was short,right?...
+
 ### Let style it with CSS
 
 ```css
@@ -232,14 +229,17 @@ img:hover{
 
 
 ```
-// basic css
+All we are doing above is arranging the different elements, adding colors and adjusting thier heights and widths.
+
+CSS as you have just read is pretty easy to understand by just reading.  You can refer to the CSS documentation for more details [here](https://developer.mozilla.org/en-US/docs/Web/CSS).
+
 
 ```css
 #togglebtn1{
     display: none;
 }
 ```
-//
+Remember the toggles we created.We will now hide them the only way we can interact with them using the lables. For that,we set their display to none.
 
 ```css
 #togglebtn2{
@@ -256,7 +256,10 @@ img:hover{
     filter: saturate(0%);
 }
 ```
-//
+You might have noticed the ~(tilde).It applies the style to all elements matching the second selector if they appear after the elements matching the first selector.Which means when the toggle button is checked, the style(our filter) will be applied to the image.
+
+The filter tag specifies how we filter the image.You can customise any way you want and combine multiple filters.
+[You can find more about filters here](https://www.w3schools.com/CSSref/css3_pr_filter.asp)
 
 
 ```css
@@ -264,7 +267,9 @@ img:hover{
     background:rgba(0, 0, 255, 0.493);
 }
 ```
-//
+Remeber that filter1 was the lable for togglebtn1. So here,what we do is that, when a toggle is checked, we change its background color.
+
+Now lets make some for filters.  
 
 ```css
 #togglebtn2:checked~#imgView{
@@ -282,8 +287,6 @@ img:hover{
     background: rgba(255, 0, 0, 0.925);
 }
 ```
-//
-
 ### And we are done 
 ```css
 body{
@@ -397,10 +400,7 @@ img:hover{
 ```
 ## Now it's your to hack
 
-Now you know how to turn text to speech. You can do a lot with it. Make it read stories,recite poems,rap some songs that you wrote,send greeting.
-Have fun.### Now it's your to hack
-
-Now you know how to turn text to speech. You can do a lot with it. Make it read stories,recite poems,rap some songs that you wrote,send greeting.
+Well, it was fun making filters, right! We just made three but you can make a lot of them, giving different values for brightness,contrast and combining these. Make cool filters, name them whatever you want, show them off to your friends or make a large collection of filters and edit pictures with it. 
 Have fun.
 
 ## Modified by other hackers.
