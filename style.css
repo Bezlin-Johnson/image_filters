@@ -22,10 +22,11 @@ body{
     outline: none;
 }
 img{
-    top: 15%;
-    left: 30%;
-    position: absolute;
+    margin-top: 5%;
+    left: 10%;
+    position: relative;
     border-radius:16px ;
+    max-width: 500px;
     box-shadow:inset 0 0 10px 5px black;
 }
 img:hover{
@@ -52,7 +53,7 @@ img:hover{
     height: 3%;
     user-select: none;
 }
-#togglebtn1:checked~img{
+#togglebtn1:checked~#imgView{
     filter: saturate(0%);
 }
 #filter2{
@@ -67,7 +68,7 @@ img:hover{
     height: 3%;
     user-select: none;
 }
-#togglebtn2:checked~img{
+#togglebtn2:checked~#imgView{
     filter: contrast(170%);
 }
 #filter3{
@@ -82,7 +83,7 @@ img:hover{
     height: 3%;
     user-select: none;
 }
-#togglebtn3:checked~img{
+#togglebtn3:checked~#imgView{
     filter: brightness(150%);
     filter: sepia(30%);
 
