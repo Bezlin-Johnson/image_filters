@@ -267,7 +267,7 @@ The filter tag specifies how we filter the image.You can customise any way you w
     background:rgba(0, 0, 255, 0.493);
 }
 ```
-Remeber that filter1 was the lable for togglebtn1. So here,what we do is that, when a toggle is checked, we change its background color.
+Remeber that filter1 was the label for togglebtn1. So here,what we do is that, when a toggle is checked, we change its background color.
 
 Now lets make some for filters.  
 
