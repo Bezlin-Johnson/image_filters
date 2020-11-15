@@ -3,10 +3,7 @@ body{
 }
 .title{
     width: 100%;
-    background: #136a8ac2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #136a8ac2;  
     color: white;
     box-shadow:0 0 10px 2px black;
     left: 0;
@@ -45,57 +42,37 @@ img:hover{
     position: absolute;
     top: 60%;
     left: 20%;
-    background: linear-gradient(grey,white);
+    background:grey;
     border: none;
     border-radius: 5px;
     width: 10%;
     text-align: center;
     height: 3%;
     user-select: none;
-}
-#togglebtn1:checked~#imgView{
-    filter: saturate(0%);
-}
-#togglebtn1:checked~#filter1{
-    background: linear-gradient(rgba(0, 0, 255, 0.863),white);
 }
 #filter2{
     position: absolute;
     top: 60%;
     left: 35%;
-    background: linear-gradient(grey,white);
+    background:grey;
     border: none;
     border-radius: 5px;
     width: 10%;
     text-align: center;
     height: 3%;
     user-select: none;
-}
-#togglebtn2:checked~#imgView{
-    filter: contrast(170%);
-}
-#togglebtn2:checked~#filter2{
-    background: linear-gradient(green,white);
 }
 #filter3{
     position: absolute;
     top: 60%;
     left: 50%;
-    background: linear-gradient(grey,white);
+    background:grey;
     border: none;
     border-radius: 5px;
     width: 10%;
     text-align: center;
     height: 3%;
     user-select: none;
-}
-#togglebtn3:checked~#imgView{
-    filter: brightness(150%);
-    filter: sepia(30%);
-
-}
-#togglebtn3:checked~#filter3{
-    background: linear-gradient(rgba(255, 0, 0, 0.925),white);
 }
 #filter1:hover{
     box-shadow: 0 0 10px 2px black;
@@ -106,13 +83,28 @@ img:hover{
 #filter3:hover{
     box-shadow: 0 0 10px 2px black;
 }
-#filter1:active{
-    opacity: 30%;
+
+#togglebtn1:checked~#imgView{
+    filter: saturate(0%);
 }
-#filter2:active{
-opacity: 30%;
+#togglebtn1:checked~#filter1{
+    background:rgba(0, 0, 255, 0.493);
 }
-#filter3:active{
-opacity: 30%;
+
+#togglebtn2:checked~#imgView{
+    filter: contrast(170%);
 }
+#togglebtn2:checked~#filter2{
+    background: green;
+}
+
+#togglebtn3:checked~#imgView{
+    filter: brightness(150%);
+    filter: sepia(30%);
+
+}
+#togglebtn3:checked~#filter3{
+    background: rgba(255, 0, 0, 0.925);
+}
+
 
