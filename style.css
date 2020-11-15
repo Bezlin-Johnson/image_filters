@@ -15,15 +15,15 @@ body{
 }
 #imageURL{
     position: absolute;
-    margin-top: 25%;
+    margin-top: 35%;
     left: 30%;
-    width: 300px;
+    width: 30%;
     border: 1px solid grey;
     outline: none;
 }
 img{
-    margin-top: 5%;
-    left: 10%;
+    margin-top: 10%;
+    left: 30%;
     position: relative;
     border-radius:16px ;
     max-width: 500px;
@@ -56,6 +56,9 @@ img:hover{
 #togglebtn1:checked~#imgView{
     filter: saturate(0%);
 }
+#togglebtn1:checked~#filter1{
+    background: linear-gradient(rgba(0, 0, 255, 0.863),white);
+}
 #filter2{
     position: absolute;
     top: 60%;
@@ -70,6 +73,9 @@ img:hover{
 }
 #togglebtn2:checked~#imgView{
     filter: contrast(170%);
+}
+#togglebtn2:checked~#filter2{
+    background: linear-gradient(green,white);
 }
 #filter3{
     position: absolute;
@@ -87,6 +93,9 @@ img:hover{
     filter: brightness(150%);
     filter: sepia(30%);
 
+}
+#togglebtn3:checked~#filter3{
+    background: linear-gradient(rgba(255, 0, 0, 0.925),white);
 }
 #filter1:hover{
     box-shadow: 0 0 10px 2px black;
